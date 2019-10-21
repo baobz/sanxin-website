@@ -1,0 +1,8 @@
+<aside class="pull-left nav-side">
+    <h1 class="side-title">{{title}}</h1>
+    <ul>
+        {{each navItem}}
+        <li class="side-item"><a href="{{$value.url}}" class="{{$value.url.indexOf(current) > 0 ? 'activity' : ''}}"><span class="icon icon-mark">　>　</span>{{$value.subTitle}}</a></li>
+        {{/each}}
+    </ul>
+</aside>

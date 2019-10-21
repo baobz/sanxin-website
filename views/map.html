@@ -1,0 +1,25 @@
+{{extend './layout.html'}}
+
+{{block 'content'}}
+{{include './components/header.html'}}
+
+<div class="contact-page">
+    <div class="about-banner">
+        <img src="https://sanxinacc.com/website/images/about_us.jpg" alt="关于三新">
+    </div>
+
+    <div class="about-main">
+        {{include './components/aside.html'}}
+        <article class="content-right">
+<!--            引入百度地图-->
+            <div id="container"></div>
+        </article>
+    </div>
+</div>
+
+{{include './components/footer.html'}}
+{{/block}}
+
+{{block 'script'}}
+<script src="http://api.map.baidu.com/api?v=3.0&ak=OArfumvI4qcjBvW0X5hEWTg3rvlbdM3K"></script>
+{{/block}}

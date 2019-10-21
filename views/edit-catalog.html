@@ -1,0 +1,19 @@
+{{extend './layout.html'}}
+{{block 'head'}}
+
+{{/block}}
+
+{{block 'content'}}
+
+<!-- 临时编辑页面 -->
+
+<h1>添加分类</h1>
+<form action="/catalog/fenlei/post" method="POST">
+    <div>添加分类: <input type="text" name="catalog"></div>
+    <div>分类代码: <input type="text" name="c_code"></div>
+
+    <button type="submit">提交</button>
+</form>
+
+{{/block}}
+

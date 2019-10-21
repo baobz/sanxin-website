@@ -1,0 +1,11 @@
+<footer>
+    <p>{{__('company')}}&nbsp;&nbsp;&nbsp;&nbsp;Copyright©<span id="date"></span></p>
+    <p>{{__('add')}} TEL:021-80128308 沪ICP备19030779号</p>
+    <div style="display:none;">auth:baobingzheng</div>
+</footer>
+<script>
+    (function () {
+        let year = new Date().getFullYear();
+        document.getElementById('date').innerHTML = year;
+    })()
+</script>

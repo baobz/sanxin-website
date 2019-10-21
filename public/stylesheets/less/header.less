@@ -1,0 +1,50 @@
+.mixin-bottom(@color) {
+  color: @color;
+  border-bottom: 3px solid @color;
+}
+
+.header {
+  padding: 20px 0;
+
+  .logo {
+    width: 200px;
+  }
+
+  .nav-container {
+    margin-left: 100px;
+    display: flex;
+    justify-content: space-between;
+
+    li {
+      margin: 0 20px;
+      a {
+        text-decoration: none;
+        font-size: 18px;
+        display: inline-block;
+        height: 50px;
+        line-height: 50px;
+
+        &:hover {
+          .mixin-bottom(#008BFF);
+        }
+
+        &.active {
+          .mixin-bottom(#008BFF);
+        }
+      }
+    }
+    li.switch-language {
+      line-height: 50px;
+      margin-right: 0;
+      color: #b6b6b6;
+      a {
+        display: block;
+      }
+      a:hover {
+        color: #b6b6b6;
+        border: none;
+      }
+    }
+  }
+
+}

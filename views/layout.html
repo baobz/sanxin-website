@@ -1,0 +1,32 @@
+<!--layout.art-->
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+<!--    <meta name='viewport' content='width=device-width,initial-scale=1'/>-->
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="description" content="三新 - 上海较大的辅料制作厂商，提供各类服饰辅料、织带、帽绳、弹力绳、标签制作… 产品优质，物美价廉！">
+    <meta name="keyword" content="帽绳,织带,弹力带,三新,三星,交易,精美,优质,服装,辅料">
+    <meta name="google" content="notranslate">
+
+    <title>{{block 'title'}}{{__('title')}}{{/block}}</title>
+    <link rel="stylesheet" type="text/css" href='/css/main.min.css'>
+    <link rel="icon" href="/images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="/lib/swiper/swiper.min.css">
+    <link rel="stylesheet" href='https://cdn.bootcss.com/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+    {{block 'head'}}
+    {{/block}}
+</head>
+<body>
+
+<div id="wrapper">
+    {{block 'content'}}{{/block}}
+</div>
+
+<script src="/lib/jquery/jquery.min.js"></script>
+<script src='https://cdn.bootcss.com/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+
+{{block 'script'}}{{/block}}
+</body>
+</html>

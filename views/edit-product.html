@@ -1,0 +1,30 @@
+{{extend './layout.html'}}
+{{block 'head'}}
+
+{{/block}}
+
+{{block 'content'}}
+
+<!-- 临时编辑页面 -->
+
+<h1>添加商品</h1>
+<form action="/catalog/shangpin/post" method="POST">
+    <div>商品名称: <input type="text" name="p_name"></div>
+    <div>商品描述: <input type="text" name="p_summary"></div>
+    <div>封面图片: <input type="text" name="p_cover"></div>
+    <div>商品编号: <input type="text" name="p_num"></div>
+    <div>
+        商品分类:
+        <select name="p_catalog" id="">
+            <option value="">--请选择分类--</option>
+            {{each catalogs}}
+            <option value={{$value._id | toString}}>{{$value.catalog}}</option>
+            {{/each}}
+        </select>
+    </div>
+
+    <button type="submit">提交</button>
+</form>
+
+{{/block}}
+

@@ -1,0 +1,64 @@
+{{extend './layout.html'}}
+{{block 'head'}}
+
+{{/block}}
+
+{{block 'content'}}
+{{include './components/header.html'}}
+
+{{include './components/banner.html'}}
+
+<div class="hot-product">
+    <h3>{{__('hotSale')}}</h3>
+    <div class="hot-container">
+        {{each hotProducts}}
+        <dl>
+            <dt>
+                <img src="{{$value.p_cover}}"/>
+            </dt>
+            <dd>{{$value.p_num}}</dd>
+        </dl>
+        {{/each}}
+    </div>
+</div>
+
+<div class="about-container clear-fix">
+    <div class="pull-left img-container">
+        <img src="https://sanxinacc.com/website/images/about1.jpg">
+    </div>
+    <div class="text-container">
+        <h3>{{__('aboutUs')}}</h3>
+        <p>
+            &nbsp; &nbsp; &nbsp; &nbsp;{{__('aboutDesc1')}}……
+            <a href="/catalog/about">{{__('more')}}</a>
+        </p>
+    </div>
+</div>
+
+{{include './components/footer.html'}}
+{{/block}}
+
+{{block 'script'}}
+<script src="/lib/swiper/swiper.min.js"></script>
+<script>
+    (function () {
+        let swiper1 = new Swiper('#swiper1', {
+            loop: true, // 循环模式选项
+            autoplay: {
+                delay: 3000
+            },
+            speed: 800,
+            // 如果需要分页器
+            pagination: {
+                el: '.swiper-pagination',
+            },
+            // 如果需要前进后退按钮
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    })();
+</script>
+{{/block}}
+

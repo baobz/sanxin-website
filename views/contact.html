@@ -1,0 +1,44 @@
+{{extend './layout.html'}}
+
+{{block 'content'}}
+{{include './components/header.html'}}
+
+<div class="contact-page">
+    <div class="about-banner">
+        <img src="https://sanxinacc.com/website/images/about_us.jpg" alt="关于三新">
+    </div>
+
+    <ul class="about-main">
+        {{include './components/aside.html'}}
+        <article class="content-right">
+            <ul class="clear-fix">
+                <li class="contact-item">
+                    <h3 class="title">{{__('company')}}</h3>
+                    <div>Tel: 021-80128307</div>
+                    <div>PostCode: 201600</div>
+                    <div>E-mail: kevin_yuan@san-xintech.com</div>
+                    <div>Website: https://www.sanxinacc.com</div>
+                </li>
+                <li class="contact-item">
+                    <h3 class="title">{{__('companySH')}}</h3>
+                    <div>{{__('add')}}</div>
+                </li>
+<!--                <li class="contact-item">-->
+<!--                    <h3 class="title">{{__('companyZH')}}</h3>-->
+<!--                    <div>{{__('addZH')}}</div>-->
+<!--                </li>-->
+<!--                <li class="contact-item">-->
+<!--                    <h3 class="title">{{__('companyZJ')}}</h3>-->
+<!--                    <div>{{__('addZJ')}}</div>-->
+<!--                </li>-->
+                <li class="contact-item">
+                    <h3 class="title">{{__('companyBJ')}}</h3>
+                    <div>{{__('addBJ')}}</div>
+                </li>
+            </ul>
+        </article>
+    </div>
+</div>
+
+{{include './components/footer.html'}}
+{{/block}}

@@ -1,0 +1,32 @@
+{
+	"title": "三新服饰科技有限公司",
+	"nav": {
+		"home": "首页",
+		"about": "关于三新",
+		"products": "产品中心",
+		"contact": "联系我们"
+	},
+	"hotSale": "热门商品",
+	"aboutDesc1": "SANXIN TECH was established in 2001,with over 18years in the field of R&D,design,production and service of garment accessory.SANXIN has been a well-established company professional in the manufacturing of garment tapes and cords.",
+	"aboutDesc2": "Our products including knitted and woven tapes,cords,elastic nylon webbings,elastic cords,jacquard tapes,printed tapes,ribbons,3m reflective tapes,PP webbing,anti-slip strap,heat transfer webbing,labels,zipper pullers,belts and buckles etc.We are keen on investing in the most advanced machines and facilities to meet the market demands,have own design department,sublimation,silk screen and printing workshop. With a good quality,reasonable price,our products are extensively used in outdoor ski,mountain wear,jackets,down wear ,cycling wear,sports goods,swim wear, beach pants,yoga clothing,sleeping wear,under wear,luggage belt,bags,shoes,fitness equipment,sport climbing and military equipment etc.All these items can be customized in material,pattern and colors according to your requirement.For years,we persist in serving the top apparel brands around the world like Armani,Lafuma etc.Besides,all of our products comply with international quality standards,passed ISO9001,EU Oeko-Tex 100,BSCI Certificate.",
+	"aboutUs": "公司简介",
+	"more": "更多数据>>",
+	"company": "上海三新服饰科技有限公司",
+	"add": "上海松江区俞塘路328号锐服产业园",
+	"culture": "公司服务",
+	"companySH": "公司总部",
+	"companyZH": "珠海工厂",
+	"addZH": "珠海市斗门区珠峰大道南3001号",
+	"companyZJ": "浙江工厂",
+	"addZJ": "浙江省杭州市建德市大词岩镇工业区盘龙路64-66号",
+	"companyBJ": "北京办事处",
+	"addBJ": "北京市通州区府东苑3栋502室",
+	"new": "新品系列",
+	"spot": "现货色板系列",
+	"print": "印刷织带系列",
+	"jacquard": "提花织带系列",
+	"reflect": "反光织带系列",
+	"rope": "腰绳帽绳系列",
+	"puller": "拉头绳扣系列",
+	"embroidered": "绣花硅胶标系列"
+}

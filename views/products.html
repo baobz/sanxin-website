@@ -1,0 +1,88 @@
+{{extend './layout.html'}}
+
+{{block 'content'}}
+{{include './components/header.html'}}
+
+<div class="product-page">
+    <div class="about-banner">
+        <img src="https://sanxinacc.com/website/images/about_us.jpg" alt="关于三新">
+    </div>
+
+    <div class="about-main clearfix">
+        <aside class="pull-left nav-side">
+            <h1 class="side-title">{{title}}</h1>
+            <ul>
+                {{each catalogs}}
+                <li class="side-item">
+                    <a href="/catalog/products/BigClass/{{$value._id | toString}}"
+                       class="{{$value.url.indexOf(current) > 0 ? 'activity' : ''}}">
+                        <span class="icon icon-mark">　>　</span>
+                        {{__($value.c_code)}}
+                    </a>
+                </li>
+                {{/each}}
+            </ul>
+        </aside>
+
+        <article class="content-right">
+            <ul class="product-container">
+                {{each products}}
+                <li class="product-item">
+                    <a href="{{$value.url}}">
+                        <dl>
+                            <dt>
+                                <img src="{{$value.p_cover}}"/>
+                            </dt>
+                            <dd>{{$value.p_num}}</dd>
+                        </dl>
+                    </a>
+                </li>
+                {{/each}}
+            </ul>
+
+            <nav aria-label="Page navigation" class="clearfix">
+                <ul class="pagination pull-right">
+
+                </ul>
+            </nav>
+        </article>
+    </div>
+</div>
+
+{{include './components/footer.html'}}
+{{/block}}
+
+{{block 'script'}}
+<script>
+$(function() {
+    let total = {{total}}, pageNum = {{pageNum}}, pageSize={{pageSize}};
+    let pages = Math.ceil(total/pageSize); // TODO: 计算页数,  优化分页
+    let paginations = [];
+
+    let itemHtml = '', prevHtml = '', nextHtml = '';
+    if(pageNum === 1) {
+        prevHtml = `<li class="disabled"><a aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>`;
+    } else {
+        prevHtml = `<li><a href="${window.location.pathname}?pageSize=${pageSize}&pageNum=${pageNum-1}" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>`;
+    }
+
+    if(pageNum === pages) {
+        nextHtml = `<li class="disabled"><a aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>`;
+    } else {
+        nextHtml = `<li><a href="${window.location.pathname}?pageSize=${pageSize}&pageNum=${pageNum+1}" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>`;
+    }
+    for(let i=1;i<=pages; i++) {
+        paginations.push(i);
+        if(pageNum === i) {
+            itemHtml += `<li class="active"><a>${i}</a></li>`
+        } else {
+            itemHtml += `<li class=""><a href="${window.location.pathname}?pageSize=${pageSize}&pageNum=${i}">${i}</a></li>`
+        }
+    }
+
+    $('.pagination').append(prevHtml+itemHtml+nextHtml);
+
+    // console.log(paginations);
+})
+</script>
+{{/block}}

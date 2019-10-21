@@ -1,0 +1,31 @@
+{{extend './layout.html'}}
+
+{{block 'content'}}
+{{include './components/header.html'}}
+
+<div class="about-page">
+    <div class="about-banner">
+        <img src="https://sanxinacc.com/website/images/about_us.jpg" alt="关于三新">
+    </div>
+    <div class="about-main">
+        {{include './components/aside.html'}}
+        <article class="content-right">
+            <h3 class="title">{{__('culture')}}</h3>
+            <div class="content">
+                <div>■　<b>Product development & Design</b></div>
+                <div></div>
+                <div>■　<b>Delivery Management</b></div>
+                <div></div>
+                <div>■　<b>Raw Material Management & Quality Assurance</b></div>
+                <div></div>
+                <div>■　<b>Provide stock products</b></div>
+                <div></div>
+                <img src="https://sanxinacc.com/website/images/HQ5.jpg">
+            </div>
+        </article>
+    </div>
+</div>
+
+{{include './components/footer.html'}}
+{{/block}}
+

@@ -1,0 +1,6 @@
+@import './reset.css';
+@import './common.css';
+
+@import 'less/header.less';
+@import 'less/index.less';
+@import 'less/footer.less';

@@ -1,0 +1,32 @@
+{{extend './layout.html'}}
+
+{{block 'content'}}
+{{include './components/header.html'}}
+
+<div class="about-page">
+    <div class="about-banner">
+        <img src="https://sanxinacc.com/website/images/about_us.jpg" alt="About SANXIN">
+    </div>
+    <div class="about-main">
+        {{include './components/aside.html'}}
+        <article class="content-right desc">
+            <h3 class="title">{{__('aboutUs')}}</h3>
+            <p>
+                &nbsp; &nbsp; &nbsp; &nbsp;{{__('aboutDesc1')}}
+            </p>
+            <p>
+                &nbsp; &nbsp; &nbsp; &nbsp;{{__('aboutDesc2')}}
+            </p>
+            <div class="about-img">
+                <img src="https://sanxinacc.com/website/images/HQ4.jpg" alt="">
+                <img src="https://sanxinacc.com/website/images/HQ1.jpg" alt="">
+                <img src="https://sanxinacc.com/website/images/about1.jpg" alt="">
+                <img src="https://sanxinacc.com/website/images/about2.jpg" alt="">
+            </div>
+        </article>
+    </div>
+</div>
+
+{{include './components/footer.html'}}
+{{/block}}
+

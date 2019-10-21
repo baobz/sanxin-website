@@ -1,0 +1,35 @@
+.product-container {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  a {
+    text-decoration: none !important;
+  }
+  .product-item {
+    width: 24%;
+    margin: 0 9px 15px 0;
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+    dl {
+      dt {
+        border: 1px solid #eeeeee;
+        margin-bottom: 8px;
+        width: 168px;
+        height: 168px;
+        img {
+          max-width: 100%;
+          max-height: 100%;
+        }
+      }
+
+      &:hover {
+        color: #c90207;
+        cursor: pointer;
+        dt {
+          border-color: #c90207;
+        }
+      }
+    }
+  }
+}

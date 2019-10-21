@@ -1,0 +1,32 @@
+{
+  "title": "sanxin tech",
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "products": "Products",
+    "contact": "Contact"
+  },
+  "hotSale": "Hot Sale",
+  "aboutDesc1": "SANXIN TECH was established in 2001,with over 18years in the field of R&D,design,production and service of garment accessory.SANXIN has been a well-established company professional in the manufacturing of garment tapes and cords.",
+  "aboutDesc2": "Our products including knitted and woven tapes,cords,elastic nylon webbings,elastic cords,jacquard tapes,printed tapes,ribbons,3m reflective tapes,PP webbing,anti-slip strap,heat transfer webbing,labels,zipper pullers,belts and buckles etc.We are keen on investing in the most advanced machines and facilities to meet the market demands,have own design department,sublimation,silk screen and printing workshop. With a good quality,reasonable price,our products are extensively used in outdoor ski,mountain wear,jackets,down wear ,cycling wear,sports goods,swim wear, beach pants,yoga clothing,sleeping wear,under wear,luggage belt,bags,shoes,fitness equipment,sport climbing and military equipment etc.All these items can be customized in material,pattern and colors according to your requirement.For years,we persist in serving the top apparel brands around the world like Armani,Lafuma etc.Besides,all of our products comply with international quality standards,passed ISO9001,EU Oeko-Tex 100,BSCI Certificate.",
+  "aboutUs": "Company Profile",
+  "more": "More>>",
+  "company": "Shanghai SANXIN Clothing Technology CO.,LTD",
+  "add": "Ruifu Industrial Park, Yutang Road 328#, SongJiang, Shanghai",
+  "culture": "Company Service",
+  "companySH": "Headquarters",
+  "companyZH": "Factory in Zhuhai",
+  "addZH": "No.3001 South of Zhufeng Road, Doumen, Zhuhai City.",
+  "companyZJ": "Factory in Zhejiang",
+  "addZJ": "No.64-66 Pan Long Road Big Ciyan Town, Jiande City, Hangzhou City, Zhejiang Province.",
+  "companyBJ": "Office in Beijing",
+  "addBJ": "Room 502, building 3, fudongyuan, tongzhou district, Beijing",
+  "new": "New Products",
+  "spot": "In-stock products",
+  "print": "Printing tapes",
+  "jacquard": "Jacquard tapes",
+  "reflect": "Reflective tapes",
+  "rope": "Coed & Strings",
+  "puller": "Zipper pullers",
+  "embroidered": "Labels"
+}
